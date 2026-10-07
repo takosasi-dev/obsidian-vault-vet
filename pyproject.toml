@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "obsidian-vault-vet"
+version = "0.1.0"
+description = "Obsidian の vault を読むだけで点検し、壊れたリンクや孤立ノートなどを一覧にする CLI"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+vaultvet = "vaultvet.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/takosasi-dev/obsidian-vault-vet"
+
+[tool.setuptools]
+packages = ["vaultvet"]

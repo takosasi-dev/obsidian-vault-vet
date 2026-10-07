@@ -1,0 +1,7 @@
+{
+  "nodes": [
+    {"id": "1", "type": "file", "file": "Canvased.md", "x": 0, "y": 0, "width": 400, "height": 300},
+    {"id": "2", "type": "text", "text": "画像 ![[canvas-only.png]]", "x": 500, "y": 0, "width": 200, "height": 100}
+  ],
+  "edges": []
+}

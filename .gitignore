@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# 手元の vault で回した結果。ノート名が入るので持たない
+*.vaultvet.json
+*.vaultvet.md
+
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
