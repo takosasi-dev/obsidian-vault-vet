@@ -1,3 +1,5 @@
+<img src="docs/icon.svg" width="96" alt="VaultVet のアイコン">
+
 # Obsidian(VaultVet)
 
 Obsidian の vault を**読むだけ**で点検して、あとで困るもの(壊れたリンク、孤立したノート、
@@ -37,32 +39,7 @@ vault の中には何も書きません。特定のフォルダ構成を前提�
 
 ## 画面
 
-```
-$ vaultvet tests/fixtures/vault --exclude Templates
-VaultVet 0.1.0  tests/fixtures/vault
-ノート 10 件 / 添付 5 件 / ファイル全体 16 件 / 0.02 秒(うち除外 1 件)
-
-■ broken_links(行き先の無いリンク): 3 件
-  Home.md:27 → [[Missing Note]]
-  Home.md:28 → ![[missing.png]]
-  Home.md:29 → [壊れた md リンク](nowhere.md)
-■ broken_headings(見出し・ブロックの無いリンク): 3 件
-  Home.md:30 → [[Project A#No Such Heading]]: 見出し「No Such Heading」が projects/Project A.md に無い
-  Home.md:31 → [[Project A#^nope]]: ブロック「^nope」が projects/Project A.md に無い
-  Home.md:32 → [[#Nope]]: 見出し「Nope」が Home.md に無い
-■ orphans(どこからもリンクされていないノート): 3 件
-  Empty.md
-  FrontOnly.md
-  Orphan.md
-■ dup_names(名前だけでは行き先が決まらないリンク): 1 件
-  Home.md:33 → [[Meeting]] が 2 件に一致: a/Meeting.md, b/Meeting.md
-■ empty(中身の無いノート): 2 件
-  Empty.md → 0 バイト
-  FrontOnly.md → フロントマターだけ
-■ unused_attachments(使われていない添付ファイル): 2 件
-  attachments/old photo.jpg
-  unused.png
-```
+![VaultVet の画面](docs/screen.svg)
 
 (`tests/fixtures/vault` の架空の vault で回した例です)
 
